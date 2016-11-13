@@ -3,13 +3,13 @@
 # Define accompanying passwords/secrets in group_vars/development/vault.yml
 
 wordpress_sites:
-  theevolutionroom.com:
+  staging.theevolutionroom.com:
     site_hosts:
       - canonical: theevolutionroom.dev
         redirects:
           - www.theevolutionroom.dev
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    admin_email: admin@theevolutionroom.com
+    admin_email: admin@staging.theevolutionroom.com
     multisite:
       enabled: false
     ssl:
